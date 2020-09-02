@@ -1,0 +1,202 @@
+body {
+  font-family: fishFont;
+  margin: 2em;
+  background: linear-gradient(to right, #CCFFFF, #3BB9FF);
+  margin: 0px auto;
+  width: 90%;
+  font-size: large;
+}
+
+h1 {
+  color: blue;
+  font-family: fishFont;
+}
+
+h2 {
+  color: blue;
+  font-family: fishFont;
+}
+
+header {
+  text-align: center;
+}
+
+.logo {
+  height: 25%;
+  width: 25%;
+  float: left;
+  padding-left: 100px;
+}
+
+nav {
+  background: linear-gradient(to right, #CCFFFF, #3BB9FF);
+  line-height: 300%;
+  font-family: fishFont;
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-style: solid none;
+  border-width: 1px;
+  max-width: 100%;
+}
+
+nav a {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 0 3%;
+}
+
+/* mouse over link */
+nav a:hover {
+  color: blue;
+}
+
+/* unvisited link */
+a:link {
+  color: black;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color: blue;
+  background-color: darkturquoise;
+}
+
+/* selected link */
+a:active {
+  color: darkturquoise;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: lightgray;
+  border-radius: 5px;
+}
+
+table h2 {
+  color: black;
+}
+
+th {
+  background-color: white;
+}
+
+td {
+  padding: 10px;
+  background-color: white;
+}
+
+.slides {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+  border-radius: 10px;
+}
+
+.left,
+.right {
+  float: left;
+  width: 50%; /* The width is 20%, by default */
+  text-align: center;
+}
+
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 800px) {
+  .left,
+  .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  .logo {
+    display: none;
+  }
+}
+
+.tleft,
+.tmiddle,
+.tright {
+  float: left;
+  width: 25%; /* The width is 20%, by default */
+  margin: 4%; 
+  text-align: center;
+}
+
+footer {
+  clear: both;
+  text-align: center;
+}
+
+@font-face {
+  font-family: fishFont;
+  src: url(https://cdn.glitch.com/8a291928-6751-4981-b587-96471c6763fb%2FFISHSTICKS01.otf?v=1598216949222);
+}
+
+.w3-left,
+.w3-right,
+.w3-badge {
+  cursor: pointer;
+}
+.w3-badge {
+  height: 13px;
+  width: 13px;
+  padding: 0;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+  height: 400px; /* The height is 400 pixels */
+  width: 100%; /* The width is the width of the web page */
+}
