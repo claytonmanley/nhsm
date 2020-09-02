@@ -134,21 +134,6 @@ td {
   }
 }
 
-/* Use a media query to add a breakpoint at 800px: */
-@media screen and (max-width: 1080px) {
-  .left,
-  .right,
-  .tleft,
-  .tmiddle,
-  .tright {
-    width: 100%; /* The width is 100%, when the viewport is 1080px or smaller */
-    margin: 0;
-  }
-  .logo {
-    display: none;
-  }
-}
-
 footer {
   clear: both;
   text-align: center;
@@ -207,6 +192,7 @@ input[type="submit"]:hover {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 999;
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
@@ -218,4 +204,8 @@ input[type="submit"]:hover {
 #map {
   height: 400px; /* The height is 400 pixels */
   width: 100%; /* The width is the width of the web page */
+}
+
+#fb-page {
+  z-index: 99;
 }
