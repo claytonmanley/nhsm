@@ -110,6 +110,15 @@ td {
   text-align: center;
 }
 
+.tleft,
+.tmiddle,
+.tright {
+  float: left;
+  width: 25%; /* The width is 20%, by default */
+  margin: 4%;
+  text-align: center;
+}
+
 /* Use a media query to add a breakpoint at 800px: */
 @media screen and (max-width: 1080px) {
   .left,
@@ -125,13 +134,19 @@ td {
   }
 }
 
-.tleft,
-.tmiddle,
-.tright {
-  float: left;
-  width: 25%; /* The width is 20%, by default */
-  margin: 4%; 
-  text-align: center;
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 1080px) {
+  .left,
+  .right,
+  .tleft,
+  .tmiddle,
+  .tright {
+    width: 100%; /* The width is 100%, when the viewport is 1080px or smaller */
+    margin: 0;
+  }
+  .logo {
+    display: none;
+  }
 }
 
 footer {
