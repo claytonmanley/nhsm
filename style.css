@@ -8,12 +8,12 @@ body {
 }
 
 h1 {
-  color: blue;
+  color: navy;
   font-family: fishFont;
 }
 
 h2 {
-  color: blue;
+  color: royalblue;
   font-family: fishFont;
 }
 
@@ -75,10 +75,10 @@ a:active {
 table,
 th,
 td {
-  border: 1px solid black;
+  border: 1px solid saddlebrown;
   margin-left: auto;
   margin-right: auto;
-  background-color: lightgray;
+  background-color: burlywood;
   border-radius: 5px;
 }
 
@@ -87,12 +87,12 @@ table h2 {
 }
 
 th {
-  background-color: white;
+  background-color: seashell;
 }
 
 td {
   padding: 10px;
-  background-color: white;
+  background-color: seashell;
 }
 
 .slides {
