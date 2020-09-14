@@ -35,47 +35,104 @@
       Phone: <a href="tel:215-862-4673">215-862-4673</a>
       <br />
       Email:
-      <a href="mailto:juan@newhopeseafood.com">juan@newhopeseafood.com</a>
+      <a href="mailto:newhopeseafood@newhopeseafood.com"
+        >newhopeseafood@newhopeseafood.com</a
+      >
 
       <br clear="both" />
+      <br />
 
       <nav id="navbar">
-        <a href="/index.html">About Us</a>
-        <a href="/menu.html">Menu</a>
-        <a href="/contact.html" style="border: 1px solid black;">Contact</a>
-        <a href="/location.html">Location</a>
+        <a href="/nhsm/index.html">About Us</a>
+        <a href="/nhsm/menu.html">Menu</a>
+        <a href="/nhsm/contact.html" style="border: 1px solid black;"
+          >Contact</a
+        >
+        <a href="/nhsm/location.html">Location</a>
       </nav>
       <br />
       <br />
       <br />
     </header>
 
-    <h3>Contact Form</h3>
+    <h2>Order from us online</h2>
 
-    Questions? Feedback? You can contact us online using the form below.
+    <h3>
+      We'll give you a call over the phone to process payment once your order
+      has been prepared and weighed
+    </h3>
 
-    <br />
-    <br />
+    <form name="order" action="order.php" method="post">
+      <label for="name">Name (required)</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Your name..."
+        required
+      />
 
-    <div class="container">
-      <form action="/action_page.php">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Your name.." />
+      <label for="phone">Phone (required)</label>
+      <input
+        input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="Your phone number..."
+        required
+      />
 
-        <label for="lname">Email</label>
-        <input type="text" id="email" name="email" placeholder="Your email.." />
+      Order Type (required)
+      <br />
+      <input
+        type="radio"
+        id="pickup"
+        name="order type"
+        value="pickup"
+        required
+      />
+      <label for="pickup">Pickup</label>
+      <br />
+      <input
+        type="radio"
+        id="delivery"
+        name="order type"
+        value="delivery"
+        required
+      />
+      <label for="delivery">Delivery</label>
+      <br />
+      <br />
 
-        <label for="subject">Subject</label>
-        <textarea
-          id="subject"
-          name="subject"
-          placeholder="Write something.."
-          style="height:200px"
-        ></textarea>
+      <label for="address">Address (only if delivery)</label>
+      <input
+        type="text"
+        id="address"
+        name="address"
+        placeholder="Your address..."
+      />
 
-        <input type="submit" value="Submit" />
-      </form>
-    </div>
+      <label for="order">Order (required)</label>
+      <textarea
+        id="order"
+        name="order"
+        placeholder="Tell us what you would like to order here... 
+
+Example: 1.5 lb scottish salmon"
+        style="height:200px"
+        required
+      ></textarea>
+
+      <label for="feedback">Special instructions (optional)</label>
+      <input
+        type="text"
+        id="feedback"
+        name="feedback"
+        placeholder="Anything else we might need to know for your order..."
+      />
+
+      <input type="submit" value="Submit" />
+    </form>
   </body>
 
   <footer>
