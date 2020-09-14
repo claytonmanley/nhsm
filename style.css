@@ -21,13 +21,6 @@ header {
   text-align: center;
 }
 
-.logo {
-  height: 25%;
-  width: 25%;
-  float: left;
-  padding-left: 100px;
-}
-
 nav {
   background: linear-gradient(to right, #CCFFFF, #3BB9FF);
   line-height: 300%;
@@ -38,6 +31,7 @@ nav {
   border-style: solid none;
   border-width: 1px;
   max-width: 100%;
+  max-height: 100px;
 }
 
 nav a {
@@ -95,12 +89,24 @@ td {
   background-color: seashell;
 }
 
-.slides {
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
-  display: none;
-  border-radius: 10px;
+.pagelogo {
+  float: left;
+  width: 30%; /* The width is 20%, by default */
+  text-align: center;
+  margin: auto;
+  display: block;
+  vertical-align: middle;
+  height: auto;
+}
+
+.pagetitle {
+  float: left;
+  width: 70%; /* The width is 20%, by default */
+  text-align: center;
+  margin: auto;
+  display: block;
+  vertical-align: middle;
+  height: auto;
 }
 
 .left,
@@ -129,23 +135,14 @@ td {
     width: 100%; /* The width is 100%, when the viewport is 1080px or smaller */
     margin: 0;
   }
-  .logo {
-    display: none;
-  }
-}
-
-/* Use a media query to add a breakpoint at 800px: */
-@media screen and (max-width: 1080px) {
-  .left,
-  .right,
-  .tleft,
-  .tmiddle,
-  .tright {
-    width: 100%; /* The width is 100%, when the viewport is 1080px or smaller */
-    margin: 0;
+  .pagelogo {
+    width: 100%;
   }
   .logo {
-    display: none;
+    width: 50%;
+  }
+  .pagetitle {
+    width: 100%
   }
 }
 
@@ -171,6 +168,7 @@ footer {
 }
 
 input[type="text"],
+input[type="tel"],
 select,
 textarea {
   width: 100%;
@@ -196,10 +194,11 @@ input[type="submit"]:hover {
   background-color: #45a049;
 }
 
-.container {
+form {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  /* background-color: #f2f2f2; */
   padding: 20px;
+  border: 1px black solid;
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
@@ -223,4 +222,131 @@ input[type="submit"]:hover {
 
 #fb-page {
   z-index: 99;
+}
+
+* {
+  box-sizing: border-box;
+}
+.mySlides {
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+}
+
+.mySlides img {
+  border-radius: 10px 10px 0px 0px;
+  border: 1px saddlebrown solid;
+}
+
+img {
+  vertical-align: middle;
+  width: 75%;
+}
+
+/* Slideshow container */
+.slideshow {
+  width: 75%;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.5s ease;
+  border-radius: 5px;
+  user-select: none;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Position the "previous button" to the left */
+.prev {
+  left: 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  border: 1px saddlebrown solid;
+  background-color: seashell;
+  border-radius: 10px 0px 0px 0px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+figcaption {
+  font-weight: bold;
+  font-size: 24px;
+  padding: 10px;
+  border: 1px saddlebrown solid;
+  background-color: seashell;
+  border-radius: 0px 0px 10px 10px;
 }
