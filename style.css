@@ -351,3 +351,7 @@ figcaption {
   background-color: seashell;
   border-radius: 0px 0px 5px 5px;
 }
+
+blockquote {
+  color: royalblue;
+}
