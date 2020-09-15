@@ -9,7 +9,7 @@ body {
 
 h1 {
   color: navy;
-  font-family: /assets/Fishsticks.otf;
+  font-family: fishsticks;
 }
 
 h2 {
@@ -152,6 +152,7 @@ footer {
 }
 
 @font-face {
+  font-family: 'fishsticks';
   src: url("/assets/Fishsticks.otf") format('truetype');
   font-style: normal;
 }
