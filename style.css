@@ -9,12 +9,12 @@ body {
 
 h1 {
   color: navy;
-  font-family: fishFont;
+  font-family: /assets/Fishsticks.otf;
 }
 
 h2 {
   color: royalblue;
-  font-family: fishFont;
+  font-family: /assets/Fishsticks.otf;
 }
 
 header {
@@ -24,7 +24,7 @@ header {
 nav {
   background: linear-gradient(to right, #CCFFFF, #3BB9FF);
   line-height: 300%;
-  font-family: fishFont;
+  font-family: /assets/Fishsticks.otf;
   position: absolute;
   left: 0;
   right: 0;
@@ -152,7 +152,7 @@ footer {
 }
 
 @font-face {
-  font-family: fishFont;
+  font-family: /assets/Fishsticks.otf;
   src: url(https://cdn.glitch.com/8a291928-6751-4981-b587-96471c6763fb%2FFISHSTICKS01.otf?v=1598216949222);
 }
 
