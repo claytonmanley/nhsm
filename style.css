@@ -235,7 +235,7 @@ form {
 }
 
 .mySlides img {
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 5px 5px 0px 0px;
   border: 1px saddlebrown solid;
 }
 
@@ -349,5 +349,5 @@ figcaption {
   padding: 10px;
   border: 1px saddlebrown solid;
   background-color: seashell;
-  border-radius: 0px 0px 10px 10px;
+  border-radius: 0px 0px 5px 5px;
 }
