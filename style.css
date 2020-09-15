@@ -353,5 +353,10 @@ figcaption {
 }
 
 blockquote {
+  color: navy;
+}
+
+.attribution {
   color: royalblue;
+  text-align: right;
 }
