@@ -1,8 +1,5 @@
-/* If you're feeling fancy you can add interactivity 
-    to your site with Javascript */
-
-// prints "hi" in the browser's dev tools console
-console.log("hi");
+// prints "navbar start" in the browser's dev tools console
+console.log("navbar start");
 
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {
@@ -24,17 +21,24 @@ function myFunction() {
   }
 }
 
-var slideIndex = 1;
-showSlides(slideIndex);
+// prints "slides start" in the browser's dev tools console
+console.log("slides start");
 
+var slideIndex = 0;
+showSlides(slideIndex);
+carousel();
+
+// Increments the slides by 1
 function plusSlides(n) {
   showSlides((slideIndex += n));
 }
 
+// Changes the current slide to be the same value as the dot (n)
 function currentSlide(n) {
   showSlides((slideIndex = n));
 }
 
+// Displays the current slide and the dots
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
@@ -55,20 +59,8 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active";
 }
 
-var myIndex = 0;
-carousel();
-
+// Increments slides by 1 every 5 seconds
 function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  myIndex++;
-  if (myIndex > x.length) {
-    myIndex = 1;
-  }
-  x[myIndex - 1].style.display = "block";
-
+  plusSlides(1);
   setTimeout(carousel, 5000);
 }
