@@ -1,10 +1,12 @@
 body {
   font-family: fishsticks;
+  font-size: large;
+}
+
+.pagebody {
   margin: 2em;
-  background: linear-gradient(to right, #CCFFFF, #3BB9FF);
   margin: 0px auto;
   width: 90%;
-  font-size: large;
 }
 
 h1 {
@@ -19,6 +21,7 @@ h2 {
 
 header {
   text-align: center;
+  background: linear-gradient(to right, #CCFFFF, #3BB9FF);
 }
 
 nav {
