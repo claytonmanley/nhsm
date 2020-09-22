@@ -1,13 +1,13 @@
 body {
   font-family: fishsticks;
   font-size: large;
+  background: azure;
 }
 
 .pagebody {
   margin: 2em;
   margin: 0px auto;
   width: 90%;
-  background: azure;
 }
 
 h1 {
