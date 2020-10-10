@@ -27,7 +27,7 @@ header {
 }
 
 nav {
-  background: linear-gradient(to right, #CCFFFF, #3BB9FF);
+  background: azure;
   line-height: 300%;
   font-family: fishsticks;
   position: absolute;
