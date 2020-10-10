@@ -45,19 +45,10 @@ nav a {
   padding: 0 3%;
 }
 
-/* mouse over link */
-nav a:hover {
-  color: blue;
-}
-
-/* unvisited link */
-a:link {
+/* link */
+a {
   color: black;
-}
-
-/* visited link */
-a:visited {
-  color: black;
+  text-decoration: none;
 }
 
 /* mouse over link */
