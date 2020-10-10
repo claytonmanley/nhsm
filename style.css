@@ -23,25 +23,24 @@ h2 {
 
 header {
   text-align: center;
-  background: linear-gradient(to right, #CCFFFF, #3BB9FF);
+  background: linear-gradient(#3BB9FF, #CCFFFF);
 }
 
 nav {
-  background: azure;
+  background: linear-gradient(#CCFFFF, azure);
   line-height: 300%;
   font-family: fishsticks;
   position: absolute;
   left: 0;
   right: 0;
-  border-style: solid none;
-  border-width: 1px;
   max-width: 100%;
   max-height: 100px;
 }
 
 nav a {
   display: inline-block;
-  border-radius: 5px;
+  box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, 0.2);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
   padding: 0 3%;
 }
 
