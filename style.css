@@ -11,11 +11,6 @@ body {
   margin: 0px;
 }
 
-header {
-  text-align: center;
-  background: linear-gradient(#3BB9FF, #CCFFFF);
-}
-
 footer {
   clear: both;
   text-align: center;
@@ -32,7 +27,7 @@ h2 {
 nav {
   background: linear-gradient(#CCFFFF, azure);
   line-height: 300%;
-  position: absolute;
+  position: relative;
   left: 0;
   right: 0;
   max-width: 100%;
@@ -87,21 +82,32 @@ td {
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
 }
 
-.pagebody {
-  margin: 2em;
-  margin: 0px auto;
-  width: 90%;
+.pagetop {
+  text-align: center;
+  display: -webkit-flex;
+display: flex;
+flex-direction: row;
+align-items: stretch;
+    background: linear-gradient(#3BB9FF, #CCFFFF);
+
 }
 
 .pagelogo img {
   float: left;
   width: 30%;
   display: block;
+
 }
 
 .pagetitle {
   float: left;
   width: 70%;
+
+}
+
+.pagebody {
+  margin: 2em;
+  margin: 0px auto;
 }
 
 /* 
@@ -275,7 +281,7 @@ blockquote {
 
 @font-face {
   font-family: "fishsticks";
-  src: url("/assets/Fishsticks.otf")
+  src: url("https://cdn.glitch.com/8a291928-6751-4981-b587-96471c6763fb%2FFISHSTICKS01.otf?v=1598216949222")
     format("truetype");
   font-style: normal;
 }
