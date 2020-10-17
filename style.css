@@ -85,24 +85,21 @@ td {
 .pagetop {
   text-align: center;
   display: -webkit-flex;
-display: flex;
-flex-direction: row;
-align-items: stretch;
-    background: linear-gradient(#3BB9FF, #CCFFFF);
-
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  background: linear-gradient(#3BB9FF, #CCFFFF);
 }
 
 .pagelogo img {
   float: left;
   width: 30%;
   display: block;
-
 }
 
 .pagetitle {
   float: left;
   width: 70%;
-
 }
 
 .pagebody {
@@ -255,7 +252,7 @@ blockquote {
 }
 
 .itemname {
-  text-align: left
+  text-align: left;
 }
 
 /* Use a media query to add a breakpoint at 800px: */
