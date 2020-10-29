@@ -113,7 +113,8 @@ td {
 .pagelogo img {
   width: 30%;
   display: block;
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .pagetitle {
