@@ -110,6 +110,12 @@ td {
   width: 30%;
 }
 
+.pagelogo img {
+  float: left;
+  width: 30%;
+  display: block;
+}
+
 .pagetitle {
   width: 70%;
 }
@@ -228,11 +234,6 @@ form {
 .mySlides img {
   border-radius: 5px 5px 0px 0px;
   border: 1px saddlebrown solid;
-}
-
-img {
-  vertical-align: middle;
-  width: 75%;
 }
 
 /* Slideshow container */
