@@ -91,6 +91,7 @@ td {
   display: -webkit-flex;
   display: inline-flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: stretch;
   background: linear-gradient(#3BB9FF, #CCFFFF);
   width: 100%
