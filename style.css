@@ -21,11 +21,6 @@ h2 {
   font-family: fishsticks;
 }
 
-header {
-  text-align: center;
-  background: linear-gradient(#3BB9FF, #CCFFFF);
-}
-
 nav {
   background: linear-gradient(#CCFFFF, azure);
   line-height: 300%;
@@ -98,26 +93,29 @@ td {
   flex-direction: row;
   align-items: stretch;
   background: linear-gradient(#3BB9FF, #CCFFFF);
+  width: 100%
 }
 
 .pagelogo {
   float: left;
-  width: 30%; /* The width is 20%, by default */
+  width: 30%;
   text-align: center;
   margin: auto;
   display: block;
   vertical-align: middle;
   height: auto;
+  border: 1px;
 }
 
 .pagetitle {
   float: left;
-  width: 70%; /* The width is 20%, by default */
+  width: 70%;
   text-align: center;
   margin: auto;
   display: block;
   vertical-align: middle;
   height: auto;
+  border: 1px;
 }
 
 .left,
@@ -136,7 +134,7 @@ td {
   text-align: center;
 }
 
-/* Use a media query to add a breakpoint at 800px: */
+/* Use a media query to add a breakpoint at 1080px: */
 @media screen and (max-width: 1080px) {
   .left,
   .right,
@@ -148,9 +146,6 @@ td {
   }
   .pagelogo {
     width: 100%;
-  }
-  .logo {
-    width: 50%;
   }
   .pagetitle {
     width: 100%
