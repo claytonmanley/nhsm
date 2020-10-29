@@ -17,7 +17,7 @@ h1 {
 }
 
 h2 {
-  color: deepskyblue;
+  color: navy;
   font-family: fishsticks;
 }
 
@@ -356,4 +356,8 @@ blockquote {
 .attribution {
   color: deepskyblue;
   text-align: right;
+}
+
+.itemname {
+  text-align: left;
 }
