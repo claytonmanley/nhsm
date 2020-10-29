@@ -111,7 +111,7 @@ td {
 }
 
 .pagelogo img {
-  width: 30%;
+  width: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -149,6 +149,9 @@ td {
   .pagetitle {
     width: 100%; /* The width is 100%, when the viewport is 1080px or smaller */
     margin: 0;
+  }
+  .pagelogo img {
+    width: 50%;
   }
 }
 
