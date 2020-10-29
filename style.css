@@ -96,32 +96,27 @@ td {
   width: 100%
 }
 
-.pagelogo {
+.pagelogo,
+.pagetitle {
   float: left;
-  width: 30%;
   text-align: center;
   margin: auto;
   display: block;
   vertical-align: middle;
   height: auto;
-  border: 1px;
+}
+.pagelogo {
+  width: 30%;
 }
 
 .pagetitle {
-  float: left;
   width: 70%;
-  text-align: center;
-  margin: auto;
-  display: block;
-  vertical-align: middle;
-  height: auto;
-  border: 1px;
 }
 
 .left,
 .right {
   float: left;
-  width: 50%; /* The width is 20%, by default */
+  width: 50%;
   text-align: center;
 }
 
