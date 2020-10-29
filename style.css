@@ -30,11 +30,12 @@ nav {
   background: linear-gradient(#CCFFFF, azure);
   line-height: 300%;
   font-family: fishsticks;
-  position: absolute;
+  position: relative;
   left: 0;
   right: 0;
   max-width: 100%;
   max-height: 100px;
+  text-align: center;
 }
 
 nav a {
@@ -53,7 +54,7 @@ a {
 
 /* mouse over link */
 a:hover {
-  color: blue;
+  color: navy;
   background-color: darkturquoise;
 }
 
@@ -88,6 +89,15 @@ td {
   background-color: seashell;
   box-shadow: 20px 38px 34px -26px hsla(0, 0%, 0%, 0.2);
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.pagetop {
+  text-align: center;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  background: linear-gradient(#3BB9FF, #CCFFFF);
 }
 
 .pagelogo {
