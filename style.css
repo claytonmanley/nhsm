@@ -50,12 +50,12 @@ a {
 /* mouse over link */
 a:hover {
   color: navy;
-  background-color: darkturquoise;
+  background-color: royalblue;
 }
 
 /* selected link */
 a:active {
-  color: darkturquoise;
+  color: royalblue;
 }
 
 table,
