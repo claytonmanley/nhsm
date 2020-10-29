@@ -17,7 +17,7 @@ h1 {
 }
 
 h2 {
-  color: royalblue;
+  color: deepskyblue;
   font-family: fishsticks;
 }
 
@@ -50,12 +50,12 @@ a {
 /* mouse over link */
 a:hover {
   color: navy;
-  background-color: royalblue;
+  background-color: deepskyblue;
 }
 
 /* selected link */
 a:active {
-  color: royalblue;
+  color: deepskyblue;
 }
 
 table,
@@ -354,6 +354,6 @@ blockquote {
 }
 
 .attribution {
-  color: royalblue;
+  color: deepskyblue;
   text-align: right;
 }
