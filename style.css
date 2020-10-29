@@ -135,15 +135,12 @@ td {
   .right,
   .tleft,
   .tmiddle,
-  .tright {
+  .tright,
+  .pagetop,
+  .pagelogo,
+  .pagetitle {
     width: 100%; /* The width is 100%, when the viewport is 1080px or smaller */
     margin: 0;
-  }
-  .pagelogo {
-    width: 100%;
-  }
-  .pagetitle {
-    width: 100%
   }
 }
 
