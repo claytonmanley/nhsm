@@ -88,6 +88,7 @@ td {
 
 .pagetop {
   text-align: center;
+  display: block;
   background: linear-gradient(#3BB9FF, #CCFFFF);
   width: 100%
 }
