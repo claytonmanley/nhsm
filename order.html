@@ -23,13 +23,6 @@
     <script src="script.js" defer></script>
   </head>
 
-  <script>
-    document.getElementById('phone').addEventListener('blur', function (e) {
-      var x = e.target.value.replace(/\D/g, '').match(/(\d{3})(\d{3})(\d{4})/);
-      e.target.value = '(' + x[1] + ') ' + x[2] + '-' + x[3];
-    });
-  </script>
-
   <body id="index">
     <div class="pagetop">
       <div class="pagelogo">
@@ -131,6 +124,13 @@
         placeholder="Your phone number..."
         required
       />
+
+      <script>
+        document.getElementById('phone').addEventListener('blur', function (e) {
+          var x = e.target.value.replace(/\D/g, '').match(/(\d{3})(\d{3})(\d{4})/);
+          e.target.value = '(' + x[1] + ') ' + x[2] + '-' + x[3];
+        });
+      </script>
 
       Order Type
       <br />
